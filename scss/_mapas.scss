@@ -1,0 +1,11 @@
+@import "variables";
+
+$l-blanco: map-get($color-letra, letrablanco);
+$l-claro: map-get($color-letra, letraclaro);
+$f-fondo: map-get($color-fondo, fondo);
+$f-blanco: map-get($color-fondo , blanco );
+$f-crema: map-get($color-fondo, crema );
+$l-negro: map-get($color-letra, letranegro );
+$f-negro: map-get($color-fondo, negro );
+$f-precio: map-get($color-fondo, precio );
+
