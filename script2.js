@@ -161,6 +161,7 @@ function generarCompra(){
 
 function darTotal(){
     alert("El precio total de su compra es de $" + precioTotalVenta)
+    document.getElementById("value").value = precioTotalVenta
 }
 
 // FIN FUNCIONES
@@ -229,12 +230,11 @@ else{
 }
 while (cantidadComprada >= 1){
     let respuestaUsuario = prompt("¿Desea comprar algo más? \n - Si \n - No")
-    if (respuestaUsuario = "Si"){
+    if (respuestaUsuario == "Si"){
         generarCompra()
     }
-    else if (respuestaUsuario = "No"){
+    else if (respuestaUsuario == "No"){
         darTotal()
         cantidadComprada = 0
     }
 }
-darTotal()
