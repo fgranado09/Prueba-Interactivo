@@ -98,6 +98,71 @@ function preguntarProducto(mensaje){
     nombreCompra = prompt("Ingrese el nombre del producto que quiere comprar: " + mensaje)
 }
 
+function generarCompra(){
+    let tipoProducto = prompt("Seleccione el tipo de producto que desea comprar:  \n 1- Teclados \n 2- Mouses \n 3- Mousepads")
+    if(tipoProducto == "Teclados"){
+        preguntarProducto(mensajeProductoTeclado)
+        if (nombreCompra == nombreTecladoA){
+            compra(stockTecladoA, precioTecladoA, nombreTecladoA)
+        }
+        else if (nombreCompra == nombreTecladoB){
+            compra(stockTecladoB, precioTecladoB, nombreTecladoB)
+        }
+        else if (nombreCompra == nombreTecladoC){
+            compra(stockTecladoC, precioTecladoC, nombreTecladoC)
+        }
+        else if (nombreCompra == nombreTecladoD){
+            compra(stockTecladoD, precioTecladoD, nombreTecladoD)
+        }
+        else if (nombreCompra == nombreTecladoE){
+            compra(stockTecladoE, precioTecladoE, nombreTecladoE)
+        }
+        else if (nombreCompra == nombreTecladoF){
+            compra(stockTecladoF, precioTecladoF, nombreTecladoF)
+        }
+    }
+    else if (tipoProducto == "Mouses"){
+        preguntarProducto(mensajeProductoMouse)
+        if (nombreCompra == nombreMouseA){
+            compra(stockMouseA, precioMouseA, nombreMouseA)
+        }
+        else if (nombreCompra == nombreMouseB){
+            compra(stockMouseB, precioMouseB, nombreMouseB)
+        }
+        else if (nombreCompra == nombreMouseC){
+            compra(stockMouseC, precioMouseC, nombreMouseC)
+        }
+        else if (nombreCompra == nombreMouseD){
+            compra(stockMouseD, precioMouseD, nombreMouseD)
+        }
+        else if (nombreCompra == nombreMouseE){
+            compra(stockMouseE, precioMouseE, nombreMouseD)
+        }
+        else if (nombreCompra == nombreMouseF){
+            compra(stockMouseF, precioMouseF, nombreMouseF)
+        }
+    }
+    else if (tipoProducto == "Mousepads"){
+        preguntarProducto(mensajeProductoMousepad)
+        if (nombreCompra == nombreMousePadA){
+            compra(stockMousePadA, precioMousePadA, nombreMousePadA)
+        }
+        else if (nombreCompra == nombreMousePadB){
+            compra(stockMousePadB, precioMousePadB, nombreMousePadB)
+        }
+        else if (nombreCompra == nombreMousePadC){
+            compra(stockMousePadC, precioMousePadC, nombreMousePadC)
+        }
+    }
+    else{
+        alert("No tenemos ese producto")
+    }    
+}
+
+function darTotal(){
+    alert("El precio total de su compra es de $" + precioTotalVenta)
+}
+
 // FIN FUNCIONES
 
 
@@ -162,4 +227,14 @@ else if (tipoProducto == "Mousepads"){
 else{
     alert("No tenemos ese producto")
 }
-alert("El precio total de su compra es de $" + precioTotalVenta)
+while (cantidadComprada >= 1){
+    let respuestaUsuario = prompt("¿Desea comprar algo más? \n - Si \n - No")
+    if (respuestaUsuario = "Si"){
+        generarCompra()
+    }
+    else if (respuestaUsuario = "No"){
+        darTotal()
+        cantidadComprada = 0
+    }
+}
+darTotal()
