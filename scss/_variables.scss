@@ -1,0 +1,21 @@
+$bg-pagina: #282d32;
+$letra-blanca: white;
+$bg-blanco: white;
+$letra-clara: #f0f9ff;
+$letra-negro: black;
+$bg-negro: black;
+$bg-precio: #80808042;
+
+$color-letra : (
+    letrablanco: $letra-blanca,
+    letraclaro: $letra-clara,
+    letranegro: $letra-negro,
+);
+
+$color-fondo:(
+    fondo: $bg-pagina,
+    blanco: $bg-blanco,
+    negro: $bg-negro,
+    precio: $bg-precio,
+);
+

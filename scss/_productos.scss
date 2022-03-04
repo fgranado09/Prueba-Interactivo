@@ -1,0 +1,68 @@
+@import "mapas";
+
+.seccion{
+    width: 85%;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    border: $f-negro 1px solid;
+}
+
+.precio{
+    background-color: $f-precio;
+    border: $f-negro 1px solid;
+    font-size: 20px;
+    text-align: center;
+    color: $l-negro;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+
+.row{
+    margin: 10px auto;
+}
+
+.card:hover{
+        transition: 1s;
+        transform: scale (1.025, 1.025);
+        border: $f-fondo solid 2px; 
+}
+
+@media (min-width: 436px) and (max-width: 768px){
+    .col-sm-4{
+        width: 100%;
+        position: relative;
+        .card{
+            position: relative;
+            left: 70px;
+        }
+    }
+    .col-md-4{
+        width: 100%;
+        position: relative;
+        .card{
+            position: relative;
+            left: 70px;
+        }
+    }
+    .col-lg-4{
+        width: 100%;
+        position: relative;
+        .card{
+            position: relative;
+            left: 70px;
+        }
+    }
+    .col-xl-4{
+        width: 100%;
+        position: relative;
+        .card{
+            position: relative;
+            left: 70px;
+        }
+    }
+}

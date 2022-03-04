@@ -1,0 +1,23 @@
+@import "mapas";
+
+.video{
+    width:100%;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.texto{
+    padding: 10px;
+    width: 80% ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 436px) and (max-width: 768px){
+    .video{
+        iframe{
+            height: 300px;
+        }
+    }
+}
