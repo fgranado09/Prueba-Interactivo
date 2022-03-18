@@ -11,6 +11,9 @@ Productos.push  (new Producto ("M4", "Mouse Logitech M185", "Mouse", 12, 990));
 Productos.push (new Producto ("M6", "Mouse Philips G403", "Mouse", 12, 1115));
 Productos.push (new Producto ("M5", "Mouse Trust Gav Gxt 101", "Mouse", 12, 1090));
 
+const filtroMouses = Productos.filter((el) => el.tipo === 'Mouse')
+console.log(filtroMouses) 
+
 // Declaro Teclados
 Productos.push (new Producto ("T1", "Teclado Trust Ziva", "Teclado", 5, 590));
 Productos.push (new Producto ("T2", "Teclado Logitech K120 USB", "Teclado", 5, 755));
@@ -19,12 +22,16 @@ Productos.push (new Producto ("T4", "Teclado Genius Black USB", "Teclado", 5, 81
 Productos.push (new Producto ("T5", "Teclado Genius 118 Sp Black", "Teclado", 5, 949));
 Productos.push (new Producto ("T6", "Teclado Genius Luxemate", "Teclado", 5, 1049));
 
+const filtroTeclados = Productos.filter((el) => el.tipo === 'Teclado')
+console.log(filtroTeclados) 
 
 // Declaro Mousepads
 Productos.push (new Producto ("P1", "Mouse Pad Estandar", "Mousepad", 2, 450));
 Productos.push (new Producto ("P2", "Mouse Pad con Gel Cristal", "Mousepad", 2, 849));
 Productos.push (new Producto ("P3", "Descansa Genius WP 100", "Mousepad", 2, 990));
 
+const filtroMousepads = Productos.filter((el) => el.tipo === 'Mousepad')
+console.log(filtroMousepads) 
 
 let listadoProductos = ("\nEstos son nuestros productos: ")
 
